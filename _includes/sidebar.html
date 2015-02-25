@@ -1,0 +1,13 @@
+<div class="sidebar">
+  <div class="sidebar-recent-posts">
+    <h3>Recently on the Blog</h3>
+      {% for post in site.posts %}
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      {% endfor %}
+  </div>
+  <div class="sidebar-store">
+    <h3>Feature Store Item</h3>
+    <img src="https://cldup.com/25KagaKtLf-3000x3000.png" alt="JS wireframe shirt" class="sidebar-featured-img"/>
+    <a href="http://teespring.com/js-wireframe" class="btn block center">JS Wireframe tee</a>
+  </div>
+</div>
